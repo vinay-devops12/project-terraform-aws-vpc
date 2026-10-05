@@ -205,7 +205,7 @@ resource "aws_vpc_peering_connection" "default" {
     allow_remote_vpc_dns_resolution = true
   }
 
-tags = merge ( 
+ tags = merge ( 
   var.aws_vpc_peering_tags,
   local.common_tags,
   {
